@@ -368,7 +368,7 @@
   // based on twitter.com list of tweets, most common format for tweets
   function render(tweet) {
     var html = '<li><div class="tweet">';
-    html += '<div class="vcard"><a href="http://twitter.com/' + tweet.user.screen_name + '" class="url"><img style="height: 48px; width: 48px;" alt="' + tweet.user.name + '" class="photo fn" height="48" src="' + tweet.user.profile_image_url + '" width="48" /></a></div>';
+    html += '<div class="vcard"><a href="http://twitter.com/' + tweet.user.screen_name + '" class="url"><img style="height: 48px; width: 48px;" alt="' + tweet.user.name + '" class="photo fn" height="48" src="' + tweet.user.profile_image_url_https + '" width="48" /></a></div>';
     html += '<div class="hentry"><strong><a href="http://twitter.com/';
     html += tweet.user.screen_name + '" ';
     html += 'title="' + tweet.user.name + '">' + tweet.user.screen_name + '</a></strong> ';
@@ -417,7 +417,7 @@
 
           // fix the user prop to match "normal" API calls
           while (i--) {
-            tweets[i].user = { id: tweets[i].from_user_id, screen_name: tweets[i].from_user, profile_image_url: tweets[i].profile_image_url };
+            tweets[i].user = { id: tweets[i].from_user_id, screen_name: tweets[i].from_user, profile_image_url_https: tweets[i].profile_image_url_https };
             tweets[i].source = twitterlib.ify.entities(tweets[i].source);
 
             // fix created_at

@@ -80,7 +80,7 @@ For example, this repository includes some test data in the <code>test</code> di
 
 Within the files the result is being passed to a predefined callback called <code>callback</code>, i.e. 
 
-    <strong>callback</strong>({"results":[{"profile_image_url":"http://a3.twimg.com/profile_images/.....
+    <strong>callback</strong>({"results":[{"profile_image_url_https":"https://a3.twimg.com/profile_images/.....
 
 Note that the number in the filename match the page numbers, so this can be a variable in our debug URL.
 
