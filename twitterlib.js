@@ -1,5 +1,5 @@
 // twitterlib.js (c) 2011 Remy Sharp
-// @version 1.0.9 / Sun Feb 19 23:05:25 2012 +0000
+// @version 1.1.4 / Fri Feb 23 10:22:31 2018 -0600
 // MIT license: http://rem.mit-license.org
 (function (global) {
   var twitterlib = {};
@@ -589,7 +589,7 @@
   }
 
   twitterlib = {
-    version: '1.0.9', //@version 1.0.9 / Sun Feb 19 23:05:25 2012 +0000
+    version: '1.1.4', //@version 1.1.4 / Fri Feb 23 10:22:31 2018 -0600
     // search is an exception case
     custom: custom,
     getUrl: getUrl,
